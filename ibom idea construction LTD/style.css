@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Ibom Idea Construction Ltd</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --muted:#64748b;
+      --accent1: #0f172a; /* dark */
+      --accent2: #0ea5a4; /* teal */
+      --accent3: #06b6d4; /* cyan */
+      --radius: 14px;
+      --container: 1100px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg) 0%, #eef3fb 100%);color:var(--accent1)}
+    .wrap{max-width:var(--container);margin:36px auto;padding:24px}
+
+    /* Header / Badge */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center}
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}}
+
+    .badge{display:inline-block;background:linear-gradient(90deg,var(--accent2),var(--accent3));color:white;padding:8px 14px;border-radius:999px;font-weight:700;font-size:13px;letter-spacing:0.6px}
+
+    .title{font-size:28px;font-weight:800;margin:12px 0 6px}
+    .subtitle{color:var(--muted);margin:0 0 18px;line-height:1.5}
+
+    /* Company card */
+    .company{background:var(--card);padding:22px;border-radius:16px;box-shadow: 0 8px 24px rgba(15,23,42,0.06);display:flex;gap:18px;align-items:center}
+    .logo{width:82px;height:82px;border-radius:12px;background:linear-gradient(135deg,var(--accent2),var(--accent3));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:20px}
+    .company h3{margin:0;font-size:18px}
+    .company p{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+    /* Grid features */
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+    @media (max-width:880px){.grid3{grid-template-columns:1fr}}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    .card h4{margin:0 0 8px;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+
+    /* Team row */
+    .team{display:flex;gap:14px;align-items:center;margin-top:22px;flex-wrap:wrap}
+    .member{background:linear-gradient(180deg, rgba(6,182,212,0.06), rgba(14,165,164,0.03));padding:10px;border-radius:10px;display:flex;gap:12px;align-items:center}
+    .avatar{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent3),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    .mmeta{font-size:13px}
+    .mmeta small{display:block;color:var(--muted)}
+
+    /* CTA */
+    .cta{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--accent2),var(--accent3));color:white;box-shadow:0 8px 20px rgba(6,182,212,0.18)}
+    .btn-ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);color:var(--accent1)}
+
+    footer{margin-top:34px;padding:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Small helpers */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div>
+        <span class="badge">About</span>
+        <h1 class="title">Ibom Idea Construction Ltd</h1>
+        <p class="subtitle">We build future-ready infrastructure and spaces across communities — blending local expertise with modern engineering and sustainable practices.</p>
+
+        <div class="company" role="region" aria-label="Company summary">
+          <div class="logo">II</div>
+          <div>
+            <h3>Ibom Idea Construction Ltd</h3>
+            <p class="muted">Registered construction firm • Civil & structural works • Sustainable design partners</p>
+            <div class="cta" style="margin-top:10px">
+              <button class="btn btn-primary" onclick="location.href='#contact'">Contact Us</button>
+              <button class="btn btn-ghost" onclick="location.href='#services'">Our Services</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <h4>Our Mission</h4>
+            <p>To deliver high-quality, sustainable construction solutions that empower communities and create long-lasting value for stakeholders.</p>
+          </div>
+          <div class="card">
+            <h4>Our Vision</h4>
+            <p>To be a leading construction company recognized for innovation, safety, and social impact across the region.</p>
+          </div>
+          <div class="card">
+            <h4>Core Values</h4>
+            <p>Integrity, Safety, Excellence, Sustainability, and Community Partnership.</p>
+          </div>
+        </div>
+
+        <section style="margin-top:18px">
+          <h3 style="margin:0 0 8px">Meet a few team members</h3>
+          <div class="team">
+            <div class="member"><div class="avatar">AK</div><div class="mmeta">Alex K.<small>Founder & MD</small></div></div>
+            <div class="member"><div class="avatar">EM</div><div class="mmeta">Ene M.<small>Head of Engineering</small></div></div>
+            <div class="member"><div class="avatar">UI</div><div class="mmeta">Udo I.<small>Project Manager</small></div></div>
+            <div class="member"><div class="avatar">RO</div><div class="mmeta">Rita O.<small>Head of Procurement</small></div></div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right column: Quick facts -->
+      <aside style="min-width:280px;align-self:start">
+        <div class="card" style="position:sticky;top:30px">
+          <h4 style="margin-top:0">Quick facts</h4>
+          <p class="muted" style="margin:6px 0"><strong>Founded:</strong> 2015</p>
+          <p class="muted" style="margin:6px 0"><strong>Headquarters:</strong> Uyo, Akwa Ibom</p>
+          <p class="muted" style="margin:6px 0"><strong>Projects:</strong> Residential • Commercial • Public works</p>
+          <p class="muted" style="margin:6px 0"><strong>Contact:</strong> +234 800 000 0000</p>
+        </div>
+      </aside>
+    </header>
+
+    <section id="services" style="margin-top:26px">
+      <h3 style="margin:0 0 10px">What we do</h3>
+      <div class="grid3">
+        <div class="card"><h4>Design & Build</h4><p class="muted">End-to-end delivery from concept design to turnkey construction.</p></div>
+        <div class="card"><h4>Renovation</h4><p class="muted">Adaptive reuse and upgrades that extend building life and improve performance.</p></div>
+        <div class="card"><h4>Consulting</h4><p class="muted">Project planning, site supervision and regulatory compliance services.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:26px">
+      <div class="card">
+        <h3 style="margin:0 0 8px">Get in touch</h3>
+        <p class="muted" style="margin:0 0 12px">Want a quote or have a project in mind? Send us a message and our team will reply within 48 hours.</p>
+        <form onsubmit="event.preventDefault();alert('Thanks — contact form disabled in demo.');" style="display:grid;gap:10px">
+          <input type="text" name="name" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid #e6eef7;font-size:14px" required>
+          <input type="email" name="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid #e6eef7;font-size:14px" required>
+          <textarea name="message" rows="4" placeholder="Tell us about the project" style="padding:10px;border-radius:8px;border:1px solid #e6eef7;font-size:14px" required></textarea>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button class="btn btn-ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Ibom Idea Construction Ltd — Building for tomorrow.
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+Done — I created a single-file HTML + CSS About page for Ibom Idea Construction Ltd in the canvas titled "Ibom Idea - About Page (HTML + CSS)".
+
+Open the canvas to copy, preview, or edit the file. Would you like:
+
+a dark-theme variant,
+
+a SCSS version,
+
+a responsive React component, or
+
+the same page exported as a PDF/PNG mockup?
+
+
